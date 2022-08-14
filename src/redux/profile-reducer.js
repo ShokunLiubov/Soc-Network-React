@@ -1,0 +1,46 @@
+const ADD_POST = 'ADD-POST'
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT'
+
+let initialState = {
+    postsData: [
+        { id: 1, massage: 'Hi, how are you?', countLikes: '12', time: '29 minutes ago' },
+        { id: 2, massage: 'It is my first post', countLikes: '99+', time: 'yesterday' },
+        { id: 3, massage: 'My name Liubov, I am wife Eugen', countLikes: '32', time: 'week ago' }
+    ],
+    newPostText: ''
+}
+
+const profileReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case ADD_POST:
+            let newPost = {
+                id: Date.now(),
+                massage: state.newPostText,
+                countLikes: '0',
+                time: new Date().toLocaleTimeString()
+            }
+            return {
+                ...state,
+                newPostText: '',
+                postsData: [newPost, ...state.postsData]
+            }
+
+        case UPDATE_NEW_POST_TEXT:
+            return {
+                ...state,
+                newPostText: action.newText
+            }
+
+        default:
+            return state
+    }
+
+
+}
+
+export const addPostActionCreator = () => ({ type: ADD_POST })
+
+export const updateNewPostTextActionCreator = (text) =>
+    ({ type: UPDATE_NEW_POST_TEXT, newText: text })
+
+export default profileReducer;

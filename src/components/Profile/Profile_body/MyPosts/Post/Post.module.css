@@ -1,0 +1,68 @@
+.post {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e9;
+    border-radius: 10px;
+    margin: 50px 0;
+    position: relative;
+    width: 70%;
+    min-height: 100px;
+}
+
+.personInfo img {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.personInfo {
+    display: flex;
+}
+
+.postInfo {
+    margin: 10px 80px;
+}
+
+.nickname {
+    color: #3e404a;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.time {
+    color: #9da6b0;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.massage {
+    color: #9ca6af;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 80px;
+}
+
+.like {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+button{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin: 0 10px 10px;
+}
+
+.countLike {
+    margin-left: 5px;
+    color: #9da6b0;
+    font-size: 12px;
+    font-weight: 500;
+}

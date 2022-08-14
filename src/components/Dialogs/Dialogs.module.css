@@ -1,0 +1,85 @@
+.container {
+    margin: 0;
+}
+
+.dialogs {
+    display: flex;
+}
+
+.dialogsItems {
+    width: 30%;
+}
+
+.dialogsItems .active {
+    background-color: #ef5b85;
+}
+
+.dialog {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e9;
+}
+.dialog a {
+    text-decoration: none;
+}
+
+.dialogAva {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50px;
+
+}
+
+.nickname {
+    color: #3e404a;
+    font-weight: 700;
+}
+
+.blockMassages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.massages {
+    padding: 0px 30px 30px;
+    display: block;
+}
+
+.massageSend {
+    display: flex;
+    justify-content: end;
+}
+
+.massageGet {
+    display: flex;
+    justify-content: start;
+}
+
+.massage {
+    background-color: #ffffff;
+    color: #72808e;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.newMassages {
+    margin: 40px;
+}
+
+.newMassages button {
+    margin: 0;
+}
+
+.newTextMassage {
+    resize: none;
+    width: 96%;
+    min-height: 50px;
+    border: 1px solid #e8e8e9;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
