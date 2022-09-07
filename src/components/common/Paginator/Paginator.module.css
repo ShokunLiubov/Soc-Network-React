@@ -1,0 +1,32 @@
+.pageNavbar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+}
+
+.selectedPage,
+.navigationButton {
+    margin: 0 8px;
+    cursor: pointer;
+    border: 2px solid #ef5b85;
+    padding: 14px 5px;
+    border-radius: 100%;
+    min-width: 40px;
+    color: #ef5b85;
+    font-weight: 800;
+}
+
+.selectedPageActive,
+.navigationButton:hover,
+.selectedPage:hover {
+    color: #ffff;
+    background-color: #ef5b85;
+}
+
+.navigationPreventNone,
+.prevNone,
+.currentNone {
+    display: none;
+}

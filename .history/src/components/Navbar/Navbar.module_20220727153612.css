@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: #ffffff;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+}
+
+.item a {
+    margin: 0 12px;
+    font-size: 17px;
+    color: #3e404a;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.item a.active {
+    color: #ef5b86;
+}
+
+.login {
+    background-color: #ffffff;
+    border: 2px solid #d8d9db;
+    border-radius: 30px;
+    padding: 10px 16px;
+    font-size: 15px;
+    color: #3e404a;
+    font-weight: 800;
+    cursor: pointer;
+}

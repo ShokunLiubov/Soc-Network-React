@@ -1,0 +1,15 @@
+.background {
+    background-image: url(./../../../../public/images/registration-bgr.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 89vh;
+    
+}
+
+.background::before {
+    content: " ";
+    width: 100%;
+    height: 89vh;
+    background-color: #696a6e99;
+}

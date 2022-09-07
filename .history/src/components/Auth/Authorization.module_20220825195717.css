@@ -1,0 +1,19 @@
+.login {
+    text-decoration: none;
+}
+
+.nickname {
+    margin: 0 12px;
+    font-size: 17px;
+    color: #3e404a;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.myProfile {
+    text-decoration: none;
+}
+
+.ava {
+    width: 30px;
+}

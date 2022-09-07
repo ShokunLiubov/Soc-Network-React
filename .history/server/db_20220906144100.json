@@ -1,0 +1,410 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "followed": false,
+      "name": "Vika",
+      "ava": "./../images/ava-w3.jpeg",
+      "age": "29",
+      "gender": "Female"
+    },
+    {
+      "id": 2,
+      "followed": false,
+      "name": "Eugen Shokun",
+      "ava": "./../images/ava-m2.png",
+      "age": "29",
+      "gender": "Male"
+    },
+    {
+      "id": 3,
+      "followed": false,
+      "name": "Liubov Shokun",
+      "ava": "./../images/ava-w7.jpeg",
+      "age": "23",
+      "gender": "Female"
+    },
+    {
+      "id": 4,
+      "followed": false,
+      "name": "Max",
+      "ava": "./../images/ava-m8.jpeg",
+      "age": "23",
+      "gender": "Male"
+    },
+    {
+      "id": 5,
+      "followed": false,
+      "name": "Nika",
+      "ava": "./../images/ava-w2.webp",
+      "age": "23",
+      "gender": "Female"
+    },
+    {
+      "id": 6,
+      "followed": false,
+      "name": "Vika",
+      "ava": "./../images/ava-w1.jpeg",
+      "age": "12",
+      "gender": "Female"
+    },
+    {
+      "id": 7,
+      "followed": false,
+      "name": "Eugen",
+      "ava": "./../images/ava-m7.jpeg",
+      "age": "19",
+      "gender": "Male"
+    },
+    {
+      "id": 8,
+      "followed": false,
+      "name": "Liubov",
+      "ava": "./../images/ava-w6.jpeg",
+      "age": "32",
+      "gender": "Female"
+    },
+    {
+      "id": 9,
+      "followed": false,
+      "name": "Max",
+      "ava": "./../images/ava-m8.jpeg",
+      "age": "26",
+      "gender": "Male"
+    },
+    {
+      "id": 10,
+      "followed": false,
+      "name": "Nika",
+      "ava": "./../images/ava-w11.jpeg",
+      "age": "21",
+      "gender": "Female"
+    },
+    {
+      "id": 11,
+      "followed": false,
+      "name": "Sasha",
+      "ava": "./../images/ava-w1.jpeg",
+      "age": "29",
+      "gender": "Female"
+    },
+    {
+      "id": 12,
+      "followed": false,
+      "name": "Yan",
+      "ava": "./../images/ava-m6.jpeg",
+      "age": "29",
+      "gender": "Male"
+    },
+    {
+      "id": 13,
+      "followed": false,
+      "name": "Masha",
+      "ava": "./../images/ava-w10.jpeg",
+      "age": "23",
+      "gender": "Female"
+    },
+    {
+      "id": 14,
+      "followed": false,
+      "name": "Ruv",
+      "ava": "./../images/ava-m5.jpeg",
+      "age": "51",
+      "gender": "Male"
+    },
+    {
+      "id": 15,
+      "followed": false,
+      "name": "Luda",
+      "ava": "./../images/ava-w9.jpeg",
+      "age": "18",
+      "gender": "Female"
+    },
+    {
+      "id": 16,
+      "followed": false,
+      "name": "Lena",
+      "ava": "./../images/ava-w6.jpeg",
+      "age": "12",
+      "gender": "Female"
+    },
+    {
+      "id": 17,
+      "followed": false,
+      "name": "Oleg",
+      "ava": "./../images/ava-m4.jpeg",
+      "age": "19",
+      "gender": "Male"
+    },
+    {
+      "id": 18,
+      "followed": false,
+      "name": "Anna",
+      "ava": "./../images/ava-w5.jpeg",
+      "age": "32",
+      "gender": "Female"
+    },
+    {
+      "id": 19,
+      "followed": false,
+      "name": "Artyr",
+      "ava": "./../images/ava-m3.jpeg",
+      "age": "26",
+      "gender": "Male"
+    },
+    {
+      "id": 20,
+      "followed": false,
+      "name": "Aleona",
+      "ava": "./../images/ava-w4.jpeg",
+      "age": "21",
+      "gender": "Female"
+    },
+    {
+      "totalCount": 20
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "userId": 1,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "February 24, 1993",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "July 07, 1993",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "backgroundImg": "./../images/bcg3.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "July 25, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "September 07, 2000",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 7,
+      "userId": 7,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 9,
+      "userId": 9,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 10,
+      "userId": 10,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 11,
+      "userId": 11,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 12,
+      "userId": 12,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 13,
+      "userId": 13,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 14,
+      "userId": 14,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 15,
+      "userId": 15,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 16,
+      "userId": 16,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 17,
+      "userId": 17,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 18,
+      "userId": 18,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 19,
+      "userId": 19,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 20,
+      "userId": 20,
+      "backgroundImg": "./../images/bcg.jpeg",
+      "birth": "April 29, 1999",
+      "city": "Kramatorsk",
+      "education": "Reed College (attended)",
+      "status": "I will give you a complete account of the system, and expound the actual teachings of the great explorer of human happiness."
+    }
+  ],
+  "auth": [
+    {
+      "id": 1,
+      "authUserId": 3,
+      "resultCode": 0,
+      "messages": [],
+      "data": {
+        "id": 3,
+        "email": "tertyshnaya99love@gmail.com",
+        "login": "shokun_liubov"
+      }
+    }
+  ],
+  "follow": [
+    {
+      "id": 1661719236524,
+      "userId": 11,
+      "authUserId": 3
+    },
+    {
+      "id": 1661719238656,
+      "userId": 19,
+      "authUserId": 3
+    },
+    {
+      "id": 1661772923322,
+      "userId": 4,
+      "authUserId": 3
+    }
+  ],
+  "status": [
+    {
+      "id": 1,
+      "userId": 1,
+      "status": "teachings of the great explorer of human happiness."
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "status": "I will give you "
+    },
+    {
+      "status": "I will give you",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "status": "happiness."
+    },
+    {
+        "status": "Mur)))))",
+        "userId": "5",
+        "id": 5
+    },
+    {
+        "status": "Mur)))))",
+        "userId": "6",
+        "id": 6
+    },
+  ]
+}

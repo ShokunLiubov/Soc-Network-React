@@ -7,6 +7,56 @@
     justify-content: space-between;
     margin-bottom: 40px;
 }
+/*  */
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search:hover {
+border-bottom: 2px solid #f2f2f2;
+}
+
+
+
+.searchButton img {
+    width: 25px;
+    padding: 10px;
+}
+
+.searchInput {
+    height: 20px;
+    width: 200px;
+    color: #72807B;
+    font-weight: 800;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    border: none;
+    outline:none;
+}
+
+.filter {
+    border-radius: 50%;
+    border: 1px solid #e8e8e9;
+    max-width: 30px;
+    max-height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin-right: 20px;
+}
+
+.filter img{
+    width: 15px;
+    padding: 10px;
+}
+
+
+/*  */
 
 .friends {
     display: flex;
@@ -21,15 +71,59 @@
     background-color: #ffffff;
     border-top: none;
     border-radius: 20px;
+    transition: all 0.5s ease-out;
 }
 
-.content {
+.avatar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    text-decoration: none;
+    position: relative;
+}
+
+.decorationGrey {
+    position: absolute;
+    bottom: 25px;
+    width: 0;
+	height: 0;
+    border-top: 31px solid transparent;
+	border-right: 270px solid #f2f2f2;
+	border-bottom: 9px solid #f2f2f2;
+    transition: all 0.5s ease-out;
+}
+
+.decorationWhite {
+    position: absolute;
+    bottom: 22px;
+    width: 0;
+	height: 0;
+	border-top: 29px solid transparent;
+	border-right: 270px solid #feffff;
+	border-bottom: 5px solid #feffff;
+    transition: all 0.5s ease-out;
+}
+
+.friend:hover
+.decorationGrey {
+    border-top: 50px solid transparent;
+    transition: all 0.5s ease-out;
+    border-bottom: 20px solid #f2f2f2;
+}
+
+.friend:hover {
+    transform: translateY(-5px);
+    transition: all 0.5s ease-out;
+}
+
+.friend:hover
+.decorationWhite {
+    bottom: 15px;
+    transition: all 0.5s ease-out;
+    transform: rotate(1deg);
+    border-top: 14px solid transparent;
+    border-bottom: 37px solid #feffff;
 }
 
 .communityAva {
@@ -51,8 +145,19 @@
 
 .personInfo {
     display: flex;
-    margin: 10px 0px 30px;
+    margin: 0px 0px 10px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
     color: #72808e;
+}
+
+.hang {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
 }
 
 .age {
@@ -63,59 +168,35 @@
     margin-left: 8px;
 }
 
-.handler {
-    position: relative;
-    width: 100%;
-}
-
-.follow {
-    position: absolute;
-    bottom: 80px;
-    left: 13.5%;
-}
-
-.goPage {
-    position: absolute;
-    top: 40px;
-    left: 13.5%;
-}
-
-.goPage, .follow {
+.follow,
+.unFollow {
+    display: flex;
+    justify-content: center;
     z-index: 20;
+    margin-bottom: 10px;
 }
 
-.handler:hover button,
-.handler:hover button,
-.handler:hover .overlay{
-    opacity: 1;
-    transition: opacity .3s;
+.follow button {
+    background-color: #3e404b;
+}
+
+.unFollow button,
+.follow button:hover{
+    background-color: #ef5b86;
 }
 
 .follow button,
-.goPage button {
+.unFollow button {
     color: #ffff;
     font-size: 20px;
     font-weight: 800;
     cursor: pointer;
     padding: 10px 0;
     width: 200px;
-    background-color: #3e404b;
     display: flex;
-    text-align: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity .3s;
 }
 
-.overlay {
-    background-color: #3e404b9c;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    transition: opacity .3s;
-    width: 100%;
-    opacity: 0;
-    height: 300px;
-    border-radius: 20px 20px 0 0;
-}
+
+
+
