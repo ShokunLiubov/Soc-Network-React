@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: flex;
+    @media screen and (max-width: 780px) {
+      display: none;
+    } 
+  }
+
+.menuBurger {
+  display: none;
+  &:after {
+    content: "";
+    background-color: #3e404a;
+    border-radius: 10px;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    top: 30px;
+    right: 40px;
+    transition: all 0.3s ease 0s;
+  }
+  &:before {
+    content: "";
+    background-color: #3e404a;
+    border-radius: 10px;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    right: 40px;
+    top: 38px;
+    transition: all 0.3s ease 0s;
+  }
+  span {
+    background-color: #3e404a;
+    border-radius: 10px;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    right: 46px;
+    top: 46px;
+    transition: all 0.3s ease 0s;
+  }
+  @media screen and (max-width: 780px) {
+    order: 2;
+    width: 30px;
+    display: block;
+  } 
+}
+
+
+  
+  .item a {
+    margin: 0 12px;
+    font-size: 17px;
+    color: #3e404a;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+    @media screen and (max-width: 980px) {
+      margin: 0 8px;
+      font-size: 15px;
+    } 
+  
+    &.active {
+      color: #ef5b86;
+    }
+  }

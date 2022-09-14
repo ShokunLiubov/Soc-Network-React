@@ -359,6 +359,19 @@
       }
     }
   ],
+  "login": [
+    {
+      "id": 1,
+      "authUserId": 3,
+      "resultCode": 0,
+      "messages": [],
+      "data": {
+        "id": 3,
+        "email": "tertyshnaya99love@gmail.com",
+        "login": "shokun_liubov"
+      }
+    }
+  ],
   "follow": [
     {
       "id": 1661719236524,

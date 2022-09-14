@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './Authorization.module.css'
+import styles from './Authorization.module.scss'
 
 const Authorization = (props) => {
     return(

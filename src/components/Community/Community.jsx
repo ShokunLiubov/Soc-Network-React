@@ -1,6 +1,6 @@
 import React from 'react';
 import Paginator from '../common/Paginator/Paginator';
-import styles from './Community.module.css'
+import styles from './Community.module.scss'
 import Friend from './Friend/Friend';
 
 const Community = (props) => {

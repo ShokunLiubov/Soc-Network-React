@@ -61,6 +61,7 @@
     height: 50px;
     padding: 0 20px;
     outline:none;
+    width: 93%;
 }
 
 .username label,

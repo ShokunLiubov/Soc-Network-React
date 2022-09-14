@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import AuthorizationContainer from '../Auth/AuthorizationContainer';
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.scss'
 
 const Navbar = () => {
     return (
@@ -28,6 +28,9 @@ const Navbar = () => {
                     <NavLink to='/music' className={navData => navData.isActive ? styles.active : styles.item}>Music</NavLink>
                 </div>
             </nav>
+            <div className={styles.menuBurger}>
+                <span></span>
+            </div>
             {/* MENU */}
 
             {/* Authorization */}

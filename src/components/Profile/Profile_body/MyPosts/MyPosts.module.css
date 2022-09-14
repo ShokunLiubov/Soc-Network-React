@@ -1,3 +1,7 @@
+.newPost {
+    width: 70%;
+}
+
 .namePost {
     color: #3e404a;
     font-size: 18px;
@@ -5,7 +9,7 @@
 }
 
 .newPostText {
-    width: 67%;
+    width: 95%;
     min-height: 100px;
     border: 1px solid #e8e8e9;
     background-color: #ffffff;
@@ -13,6 +17,7 @@
     margin: 20px 0;
     padding: 20px;
     resize: none;
+    
 }
 
 .newPost button {

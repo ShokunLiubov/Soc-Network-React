@@ -49,6 +49,12 @@ export const usersAuth = {
     getAuth() {
         return instance.get('auth/1').then(response => response.data)
     },
+    login(email, password) {
+        return instance.post('login/1', { email, password }).then(response => response.data)
+    },
+    logOut() {
+        return instance.delete('login/1').then(response => response.data)
+    },
 }
 
 

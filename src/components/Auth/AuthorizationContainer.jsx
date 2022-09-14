@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import Authorization from './Authorization';
-import { getAuthUserData } from '../../redux/auth-reducer';
+import { getAuthUserData, logOut } from '../../redux/auth-reducer';
 import AuthProfile from './AuthProfile';
 import { compose } from 'redux';
 
@@ -36,5 +36,5 @@ let mapStateToProps = (state) => {
 
 
 export default compose(
-    connect(mapStateToProps, { getAuthUserData })
+    connect(mapStateToProps, { getAuthUserData, logOut })
 )(AuthorizationContainer)
