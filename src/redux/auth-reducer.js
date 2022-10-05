@@ -1,14 +1,16 @@
+import { stopSubmit } from "redux-form"
 import { usersAuth } from "../api/api"
 
-const SET_USER_DATA = 'SET-USER-DATA'
+const SET_USER_DATA = 'auth/SET-USER-DATA'
 
 let initialState = {
     userId: undefined,
-    email: undefined,
     login: undefined,
+    password: undefined,
     isAuth: false,
     myUserProfile: {}
 }
+
 const authReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_USER_DATA:
@@ -21,35 +23,42 @@ const authReducer = (state = initialState, action) => {
     }
 }
 
-export const setAuthUserData = (userId, email, login, isAuth) => ({ type: SET_USER_DATA, payload: {userId, email, login, isAuth} })  
+export const setAuthUserData = (userId, login, password, isAuth) => ({ type: SET_USER_DATA, payload: {userId, login, password, isAuth} })  
 
 export const getAuthUserData = () => {
     return (dispatch) => {
-        usersAuth.getAuth().then(data => {
+        return usersAuth.getAuth().then(data => {
             if (data.resultCode === 0) {
-                let { id, email, login } = data.data
-                dispatch(setAuthUserData(id, email, login, true))
+                dispatch(setAuthUserData(data.authUserId, data.data.login, data.data.password, true))
             }
         })
     }
 }
 
-export const login = (email, password) => {
+export const login = ( login, password) => {
     return (dispatch) => {
-        usersAuth.login(email, password).then(data => {
-            if (data.resultCode === 0) {
-                dispatch(getAuthUserData())
-            }
-        })
+            usersAuth.loginPerson(login).then(data => {
+                if(data === undefined) {
+                    return dispatch( stopSubmit('login', {_error: 'Incorrect login or password'}) )
+                }
+
+                if(data.login === login && data.password === password) {
+                    usersAuth.login(data.id, login, password).then(data => {  
+                        dispatch(getAuthUserData())               
+                })
+                }  else {
+                    dispatch( stopSubmit('login', {_error: 'Incorrect login or password'}) )
+                }
+            })
+
+        
     }
 }
 
 export const logOut = () => {
     return (dispatch) => {
         usersAuth.logOut().then(data => {
-            if (data.resultCode === 0) {
                 dispatch(setAuthUserData(null, null, null, false))
-            }
         })
     }
 }

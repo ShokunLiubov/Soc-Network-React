@@ -41,9 +41,6 @@
   max-width: 30px;
   max-height: 30px;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   background-color: #ffffff;
   margin-right: 20px;
 
@@ -62,6 +59,7 @@
 }
 
 .friend {
+  position: relative;
   width: 18.4vw;
   margin: 6.1px;
   border: 1px solid #e8e8e9;
@@ -250,4 +248,20 @@
   @media screen and (max-width: 480px) {
     width: 55vw;
   } 
+}
+
+.meProfile {
+  background-color: #ef5b86;
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 18.4vw;
+  border-top: none;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.meProfileName {
+  color: #3e404a;
+  font-size: 18px;
+  font-weight: 700;
 }

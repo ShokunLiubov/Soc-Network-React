@@ -6,7 +6,9 @@
       "name": "Vika",
       "ava": "./../images/ava-w3.jpeg",
       "age": "29",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Vika",
+      "password": "Vika12"
     },
     {
       "id": 2,
@@ -14,7 +16,9 @@
       "name": "Eugen Shokun",
       "ava": "./../images/ava-m2.png",
       "age": "29",
-      "gender": "Male"
+      "gender": "Male",
+      "login": "Eugen",
+      "password": "Eugen12"
     },
     {
       "id": 3,
@@ -22,7 +26,9 @@
       "name": "Liubov Shokun",
       "ava": "./../images/ava-w7.jpeg",
       "age": "23",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "shokun_liubov",
+      "password": "tertyshnaya99"
     },
     {
       "id": 4,
@@ -30,7 +36,9 @@
       "name": "Max",
       "ava": "./../images/ava-m8.jpeg",
       "age": "23",
-      "gender": "Male"
+      "gender": "Male",
+      "login": "Max",
+      "password": "Max12"
     },
     {
       "id": 5,
@@ -38,7 +46,9 @@
       "name": "Nika",
       "ava": "./../images/ava-w2.webp",
       "age": "23",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Nika",
+      "password": "Nika12"
     },
     {
       "id": 6,
@@ -46,7 +56,9 @@
       "name": "Vika",
       "ava": "./../images/ava-w1.jpeg",
       "age": "12",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Vika22",
+      "password": "Vika22"
     },
     {
       "id": 7,
@@ -54,7 +66,9 @@
       "name": "Eugen",
       "ava": "./../images/ava-m7.jpeg",
       "age": "19",
-      "gender": "Male"
+      "gender": "Male",
+      "login": "Eugen22",
+      "password": "Eugen22"
     },
     {
       "id": 8,
@@ -62,7 +76,9 @@
       "name": "Liubov",
       "ava": "./../images/ava-w6.jpeg",
       "age": "32",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Liubov22",
+      "password": "Liubov22"
     },
     {
       "id": 9,
@@ -70,7 +86,9 @@
       "name": "Max",
       "ava": "./../images/ava-m8.jpeg",
       "age": "26",
-      "gender": "Male"
+      "gender": "Male",
+      "login": "Max22",
+      "password": "Max22"
     },
     {
       "id": 10,
@@ -78,7 +96,9 @@
       "name": "Nika",
       "ava": "./../images/ava-w11.jpeg",
       "age": "21",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Nika22",
+      "password": "Nika22"
     },
     {
       "id": 11,
@@ -86,7 +106,9 @@
       "name": "Sasha",
       "ava": "./../images/ava-w1.jpeg",
       "age": "29",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Sasha",
+      "password": "Sasha22"
     },
     {
       "id": 12,
@@ -94,7 +116,9 @@
       "name": "Yan",
       "ava": "./../images/ava-m6.jpeg",
       "age": "29",
-      "gender": "Male"
+      "gender": "Male",
+      "login": "Yan",
+      "password": "Yan22"
     },
     {
       "id": 13,
@@ -102,7 +126,9 @@
       "name": "Masha",
       "ava": "./../images/ava-w10.jpeg",
       "age": "23",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Masha",
+      "password": "Masha22"
     },
     {
       "id": 14,
@@ -110,7 +136,9 @@
       "name": "Ruv",
       "ava": "./../images/ava-m5.jpeg",
       "age": "51",
-      "gender": "Male"
+      "gender": "Male",
+      "login": "Ruv",
+      "password": "Ruv22"
     },
     {
       "id": 15,
@@ -118,7 +146,9 @@
       "name": "Luda",
       "ava": "./../images/ava-w9.jpeg",
       "age": "18",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Luda",
+      "password": "Luda22"
     },
     {
       "id": 16,
@@ -126,7 +156,9 @@
       "name": "Lena",
       "ava": "./../images/ava-w6.jpeg",
       "age": "12",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Lena",
+      "password": "Lena22"
     },
     {
       "id": 17,
@@ -134,7 +166,9 @@
       "name": "Oleg",
       "ava": "./../images/ava-m4.jpeg",
       "age": "19",
-      "gender": "Male"
+      "gender": "Male",
+      "login": "Oleg",
+      "password": "Oleg22"
     },
     {
       "id": 18,
@@ -142,7 +176,9 @@
       "name": "Anna",
       "ava": "./../images/ava-w5.jpeg",
       "age": "32",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Anna",
+      "password": "Anna22"
     },
     {
       "id": 19,
@@ -150,7 +186,9 @@
       "name": "Artyr",
       "ava": "./../images/ava-m3.jpeg",
       "age": "26",
-      "gender": "Male"
+      "gender": "Male",
+      "login": "Artyr",
+      "password": "Artyr22"
     },
     {
       "id": 20,
@@ -158,7 +196,9 @@
       "name": "Aleona",
       "ava": "./../images/ava-w4.jpeg",
       "age": "21",
-      "gender": "Female"
+      "gender": "Female",
+      "login": "Aleona",
+      "password": "Aleona22"
     },
     {
       "totalCount": 20
@@ -354,38 +394,20 @@
       "messages": [],
       "data": {
         "id": 3,
-        "email": "tertyshnaya99love@gmail.com",
-        "login": "shokun_liubov"
-      }
-    }
-  ],
-  "login": [
-    {
-      "id": 1,
-      "authUserId": 3,
-      "resultCode": 0,
-      "messages": [],
-      "data": {
-        "id": 3,
-        "email": "tertyshnaya99love@gmail.com",
-        "login": "shokun_liubov"
+        "login": "shokun_liubov",
+        "password": "tertyshnaya99"
       }
     }
   ],
   "follow": [
     {
-      "id": 1661719236524,
-      "userId": 11,
-      "authUserId": 3
-    },
-    {
-      "id": 1661719238656,
-      "userId": 19,
-      "authUserId": 3
-    },
-    {
-      "id": 1661772923322,
+      "id": 1664812910967,
       "userId": 4,
+      "authUserId": 3
+    },
+    {
+      "id": 1664814202862,
+      "userId": 1,
       "authUserId": 3
     }
   ],
@@ -397,12 +419,12 @@
     },
     {
       "userId": "2",
-      "status": "PHP ",
+      "status": "PHP",
       "id": 2
     },
     {
       "userId": "3",
-      "status": "React dev",
+      "status": "Love)",
       "id": 3
     },
     {
@@ -416,8 +438,8 @@
       "id": 5
     },
     {
-      "status": "Mur)))))",
       "userId": "6",
+      "status": "Mur)))))",
       "id": 6
     },
     {
@@ -432,7 +454,7 @@
     },
     {
       "userId": "9",
-      "status": "Bilder",
+      "status": "Bilder))))))))))",
       "id": 9
     },
     {
@@ -471,8 +493,8 @@
       "id": 16
     },
     {
-      "status": "Mur)))))",
       "userId": "17",
+      "status": "Helooooooooo",
       "id": 17
     },
     {

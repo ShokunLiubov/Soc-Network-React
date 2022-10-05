@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes,Navigate} from 'react-router-dom';
 import { login } from '../../../redux/auth-reducer';
 import ProfileContainer from '../../Profile/ProfileContainer';
 import styles from './Login.module.css'
@@ -15,9 +15,10 @@ const Login = (props) => {
     if(props.isAuth) {
         return (
         <Routes>
-            <Route path='/profile/*' element={<ProfileContainer />} />
+            <Route path='*' element={<Navigate to="/profile"  replace />} />
         </Routes> 
-        )}
+        )
+    }
 
     return (
         <div className={styles.background}>

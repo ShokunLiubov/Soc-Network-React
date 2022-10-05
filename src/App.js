@@ -1,38 +1,79 @@
-import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import React, { Suspense } from 'react';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { connect, Provider } from 'react-redux'
+import { compose } from 'redux';
+import { initializeApp } from './redux/app-reducer';
+import Preloader from './components/common/Preloader/Preloader';
+import { withRouter } from './hoc/withRouter';
+import store from './redux/redux-store';
 import './App.css';
 import Login from './components/Auth/Login/Login';
-import CommunityContainer from './components/Community/CommunityContainer';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 import Home from './components/Home/Home';
-import Music from './components/Music/Music';
 import Navbar from './components/Navbar/Navbar';
 import ProfileContainer from './components/Profile/ProfileContainer';
+const Music = React.lazy(() => import('./components/Music/Music'));
+const CommunityContainer = React.lazy(() => import('./components/Community/CommunityContainer'));
 
-function App(props) {
-  return (
+class App extends React.Component {
 
-    <div className='app-wrapper'>
-      <Navbar />
-      <Routes>
-        <Route path='/home/*' element={<Home />} />
+  componentDidMount() {
+    this.props.initializeApp()
+  }
 
-        <Route path='/community/*' element={<CommunityContainer />} />
+  render() {
+    if (!this.props.initialized) {
+      return <Login />
+    }
 
-        <Route path='/profile/:id' element={<ProfileContainer />} />
-        <Route path='/profile/*' element={<ProfileContainer />} />
+    return (
+      <Suspense fallback={<div><Preloader /></div>}>
+        <div className='app-wrapper'>
+          <Navbar />
+          <Routes>
+            <Route path='/home/*' element={<Home />} />
 
-        <Route path='/dialogs/*' element={<DialogsContainer />} />
+            <Route path='/community/*' element={<CommunityContainer />} />
 
-        <Route path='/music/*' element={<Music />} />
-        
-        <Route path='/login/*' element={<Login />} />
+            <Route path='/profile/:id' element={<ProfileContainer />} />
+            <Route path='/profile/*' element={<ProfileContainer />} />
 
-      </Routes>
+            <Route path='/dialogs/*' element={<DialogsContainer />} />
+
+            <Route path='/music/*' element={<Music />} />
+
+            <Route path='/login/*' element={<Login />} />
+
+            <Route path='/friends/*' element={<Music />} />
+
+          </Routes>
+          </div >
+      </Suspense>
       
-    </div>
 
-  );
+    );
+  }
 }
 
-export default App;
+let mapStateToProps = (state) => {
+  return {
+    initialized: state.app.initialized
+  }
+}
+
+const AppContainer = compose(
+  withRouter,
+  connect(mapStateToProps, { initializeApp })
+)(App)
+
+const ReactJSApp = (props) => {
+  return (
+    <BrowserRouter>
+      <Provider store={store}>
+        <AppContainer />
+      </Provider>
+    </BrowserRouter>
+  )
+}
+
+export default ReactJSApp;

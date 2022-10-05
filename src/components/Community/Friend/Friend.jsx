@@ -1,8 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './../Community.module.scss'
+import Follow from './Follow';
 
 const Friend = (props) => {
+
+    let authProfile = props.authUserId === props.id
+
     return (
         <div className={styles.friend}>
 
@@ -19,18 +23,20 @@ const Friend = (props) => {
                     <div className={styles.gender}>{props.gender}</div>
                 </div>
 
-                {props.followed
-                    ? <div className={styles.unFollow}>
-                        <button  disabled={ props.isFollowing.some(id => id === props.id )} onClick={() => {
-                            props.unFollow(props.id, props.followedId)
-                        }}>Unfollow</button>
-                    </div>
-                    : <div className={styles.follow}>
+                {authProfile ||
+                    <Follow
+                        follow={props.follow} unFollow={props.unFollow}
+                        isFollowing={props.isFollowing}
+                        id={props.id}
+                        followed={props.followed}
+                        followedId={props.followedId} />}
 
-                        <button disabled={props.isFollowing.some(id => id === props.id )} onClick={() => {
-                            props.follow(props.id)
-                        }}>Follow</button>
-                    </div>}
+                {authProfile &&
+                    <>
+                        <span className={styles.meProfileName}>Me Profile</span>
+                        <span className={styles.meProfile}></span>
+                    </>
+                }
             </div>
 
         </div>

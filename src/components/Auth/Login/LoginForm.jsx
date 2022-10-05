@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Login.module.css'
+import formStyles from '../../common/FormsControl/FormsControl.module.css'
 import { Field, reduxForm } from 'redux-form'
 import { Element } from '../../common/FormsControl/FormsControl';
 import { required } from '../../../utils/validators/validators';
@@ -9,7 +10,7 @@ const Input = Element("input")
 const LoginForm = (props) => {
 
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form className={formStyles.form} onSubmit={props.handleSubmit}>
             <div className={styles.username}>
                 <label>Username or Email Address</label>
                 <Field component={Input} name={'login'} type="text"
@@ -20,6 +21,9 @@ const LoginForm = (props) => {
                 <Field component={Input} name={'password'} type="password"
                 validate={[ required ]} />
             </div>
+            { props.error && <div className={formStyles.formSummaryError}>
+                {props.error}
+            </div>}
             <div className={styles.buttonLogin}>
                 <button>Log in</button>
             </div>

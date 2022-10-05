@@ -1,6 +1,7 @@
 import React from 'react';
 import Preloader from '../../common/Preloader/Preloader';
 import ProfileStatus from './ProfileStatus';
+import ProfileStatusHooks from './ProfileStatusHooks';
 import styles from './Profile_header.module.css'
 
 const Profile_header = (props) => {
@@ -22,10 +23,14 @@ const Profile_header = (props) => {
                         <span className={styles.birth}>{profile.birth}</span>
                         <span className={styles.city}>{profile.city}</span>
                         <span className={styles.education}>{profile.education}</span>
-                        <ProfileStatus status={props.status} 
+
+                        {/* <ProfileStatus status={props.status} 
                         updateUsersStatus={props.updateUsersStatus}
-                        profileId={props.profileId}/>
-                        
+                        profileId={props.profileId}/> */}
+                        <ProfileStatusHooks
+                        status={props.status} 
+                        updateUsersStatus={props.updateUsersStatus}
+                        profileId={props.profileId} />
                     </div>
                 </div>
             </div>
