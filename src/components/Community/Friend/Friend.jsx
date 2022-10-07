@@ -11,7 +11,7 @@ const Friend = (props) => {
         <div className={styles.friend}>
 
             <NavLink to={'/profile/' + props.id} className={styles.avatar}>
-                <img className={styles.communityAva} src={props.ava != null ? props.ava : './images/ava-woman.png'} />
+                <img className={styles.communityAva} src={props.ava != null ? props.ava : './../images/ava-woman.png'} />
                 <div className={styles.decorationGrey}></div>
                 <div className={styles.decorationWhite}></div>
             </NavLink>

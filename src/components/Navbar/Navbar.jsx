@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className={styles.navbar}>
             {/* LOGO */}
-            <div className={styles.logo}><img src='./images/logotype.png' /></div>
+            <div className={styles.logo}><img src='./../images/logotype.png' /></div>
              {/* LOGO */}
 
             {/* MENU */}

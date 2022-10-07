@@ -15,9 +15,9 @@ const Profile_header = (props) => {
     return (
             <div>
                 <div className={styles.header}>
-                <div className={styles.background}><img src={profile.backgroundImg != undefined ? profile.backgroundImg : './images/bcg.jpeg'} /></div>
+                <div className={styles.background}><img src={profile.backgroundImg != undefined ? profile.backgroundImg : './../images/bcg.jpeg'} /></div>
                 <div className={styles.content}>
-                    <div className={styles.ava}><img src={user.ava != undefined ? user.ava : './images/ava-woman.png'} /></div>
+                    <div className={styles.ava}><img src={user.ava != undefined ? user.ava : './../images/ava-woman.png'} /></div>
                     <div className={styles.description}>
                         <span className={styles.nickname}>{user.name}</span>
                         <span className={styles.birth}>{profile.birth}</span>
