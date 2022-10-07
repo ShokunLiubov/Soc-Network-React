@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
 import { connect, Provider } from 'react-redux'
 import { compose } from 'redux';
 import { initializeApp } from './redux/app-reducer';

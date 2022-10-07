@@ -18,11 +18,11 @@ const Community = (props) => {
         <div className={styles.container}>
             <div className={styles.topPanel}>
                 <div className={styles.search}>
-                    <span className={styles.searchButton}><img src="./../images/search.png" alt="" /></span>
+                    <span className={styles.searchButton}><img src="./images/search.png" alt="" /></span>
                     <input className={styles.searchInput} />
                 </div>
 
-                <span className={styles.filter}><img src="./../images/filter-icon.png" alt="" /></span>
+                <span className={styles.filter}><img src="./images/filter-icon.png" alt="" /></span>
             </div>
 
             <div className={styles.friends}>

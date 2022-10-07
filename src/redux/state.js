@@ -14,11 +14,11 @@ let store = {
         },
         dialogsPage: {
             dialogsData: [
-                { id: 1, name: 'Vika', ava: './../images/ava-w1.jpeg' },
-                { id: 2, name: 'Eugen', ava: './../images/ava-m2.png' },
-                { id: 3, name: 'Liubov', ava: './../images/ava-w3.jpeg' },
-                { id: 4, name: 'Max', ava: './../images/ava-m1.jpeg' },
-                { id: 5, name: 'Nika', ava: './../images/ava-w2.webp' }
+                { id: 1, name: 'Vika', ava: './images/ava-w1.jpeg' },
+                { id: 2, name: 'Eugen', ava: './images/ava-m2.png' },
+                { id: 3, name: 'Liubov', ava: './images/ava-w3.jpeg' },
+                { id: 4, name: 'Max', ava: './images/ava-m1.jpeg' },
+                { id: 5, name: 'Nika', ava: './images/ava-w2.webp' }
             ],
             massagesData: [
                 { id: 1, massage: 'Hi' },
@@ -29,16 +29,16 @@ let store = {
         },
         communityPage: {
             friendsData: [
-                { id: 1, name: 'Vika', ava: './../images/ava-w1.jpeg', age: '29', gender: 'Female' },
-                { id: 2, name: 'Eugen', ava: './../images/ava-m2.png', age: '29', gender: 'Male' },
-                { id: 3, name: 'Liubov', ava: './../images/ava-w3.jpeg', age: '23', gender: 'Female' },
-                { id: 4, name: 'Max', ava: './../images/ava-m1.jpeg', age: '51', gender: 'Male' },
-                { id: 5, name: 'Nika', ava: './../images/ava-w2.webp', age: '18', gender: 'Female' },
-                { id: 6, name: 'Vika', ava: './../images/ava-w1.jpeg', age: '12', gender: 'Female' },
-                { id: 7, name: 'Eugen', ava: './../images/ava-m2.png', age: '19', gender: 'Male' },
-                { id: 8, name: 'Liubov', ava: './../images/ava-w3.jpeg', age: '32', gender: 'Female' },
-                { id: 9, name: 'Max', ava: './../images/ava-m1.jpeg', age: '26', gender: 'Male' },
-                { id: 10, name: 'Nika', ava: './../images/ava-w2.webp', age: '21', gender: 'Female' }
+                { id: 1, name: 'Vika', ava: './images/ava-w1.jpeg', age: '29', gender: 'Female' },
+                { id: 2, name: 'Eugen', ava: './images/ava-m2.png', age: '29', gender: 'Male' },
+                { id: 3, name: 'Liubov', ava: './images/ava-w3.jpeg', age: '23', gender: 'Female' },
+                { id: 4, name: 'Max', ava: './images/ava-m1.jpeg', age: '51', gender: 'Male' },
+                { id: 5, name: 'Nika', ava: './images/ava-w2.webp', age: '18', gender: 'Female' },
+                { id: 6, name: 'Vika', ava: './images/ava-w1.jpeg', age: '12', gender: 'Female' },
+                { id: 7, name: 'Eugen', ava: './images/ava-m2.png', age: '19', gender: 'Male' },
+                { id: 8, name: 'Liubov', ava: './images/ava-w3.jpeg', age: '32', gender: 'Female' },
+                { id: 9, name: 'Max', ava: './images/ava-m1.jpeg', age: '26', gender: 'Male' },
+                { id: 10, name: 'Nika', ava: './images/ava-w2.webp', age: '21', gender: 'Female' }
             ]
         }
     },
